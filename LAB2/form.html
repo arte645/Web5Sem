@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Various Input Types</title>
+</head>
+<body>
+
+<h1>Форма</h1>
+
+<form action="/submit" method="post">
+    <fieldset>
+        <legend>Введите данные:</legend>
+        <label for="text">Text Input:</label>
+        <input type="text" autofocus id="text" required id="text" id="text" name="text" required required list="texts">
+        <datalist id="texts">
+            <option value="user1"></option>
+            <option value="user2"></option>
+            <option value="admin"></option>
+            <option value="test_user"></option>
+        </datalist>
+        <span>Введите текст</span>
+        <br><br>
+
+        <label for="password">Password Input:</label>
+        <input type="password" autofocus id="password" pattern = "qwerty" required id="password" id="password" name="password" required>
+        <span>Введите пароль - qwerty</span>
+        <br><br>
+
+        <label for="interests">Interests:</label>
+        <br><br>
+        <label for="sports" >Sports</label>
+        <input type="checkbox" autofocus id="sports" id="sports" name="interests" value="sports">
+        <span>Поставьте галочку, если любите спорт</span>
+        <br><br>
+        <label for="music">Music</label>
+        <input type="checkbox" autofocus id="music" id="music" name="interests" value="music">
+        <span>Поставьте галочку, если любите музыку</span>
+        <br><br>
+        <label for="travel">Travel</label>
+        <input type="checkbox" autofocus id="travel"  id="travel" name="interests" value="travel" disabled>
+        <span>Поставьте галочку, если любите путешествия</span>
+        <br><br>
+
+        <label for="email">Какая почта вам больше нравится:</label>
+        <select type = "email" id="email" name="email">
+            <option value="a">a@mail.ru</option>
+            <option value="b">b@mail.ru</option>
+            <option value="ab">ab@mail.ru</option>
+            <option value="ba">ba@mail.ru</option>
+        </select>
+        <br><br>
+
+        <label for="number">Number:</label>
+        <input type="number" autofocus id="number" required id="number" id="number" name="number" min="1" max="100" required list="numbers">
+        <datalist id="numbers">
+            <option value="18"></option>
+            <option value="25"></option>
+            <option value="30"></option>
+            <option value="40"></option>
+            <option value="50"></option>
+        </datalist>
+        <span>Число должно быть от 1 до 100</span>
+        <br><br>
+
+        <label for="web">Your url:</label>
+        <textarea type="url" id="web" name="web" rows="4" cols="50" placeholder="https://up.omgtu.ru/" value="https://up.omgtu.ru/" readonly></textarea>
+        <br><br>
+
+        <button type="submit">Отправить</button>
+    </fieldset>
+</form>
+
+</body>
+</html>
