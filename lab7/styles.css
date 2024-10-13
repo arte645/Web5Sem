@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+#output {
+    margin-top: 20px;
+    display: flex;                       /* Используем flex для расположения квадратов */
+    flex-wrap: wrap;                     /* Позволяем обертывание на новую строку */
+    flex-direction: column               
+}
+.node {
+    width: 50px;                        /* Ширина квадрата */
+    height: 50px;                       /* Высота квадрата */
+    background-color: blue;             /* Цвет фона */
+    color: white;                       /* Цвет текста */
+    display: flex;                       /* Используем flex для центрирования содержимого */
+    justify-content: center;             /* Выравнивание по горизонтали */
+    align-items: center;                 /* Выравнивание по вертикали */
+    margin: 5px;                        /* Отступы между квадратами */
+    border-radius: 5px;                 /* Закругление углов */
+
+}
+
+.takenNode {
+    width: 50px;                        /* Ширина квадрата */
+    height: 50px;                       /* Высота квадрата */
+    background-color: black;             /* Цвет фона */
+    color: white;                       /* Цвет текста */
+    display: flex;                       /* Используем flex для центрирования содержимого */
+    justify-content: center;             /* Выравнивание по горизонтали */
+    align-items: center;                 /* Выравнивание по вертикали */
+    margin: 5px;                        /* Отступы между квадратами */
+    border-radius: 5px;                 /* Закругление углов */
+}
